@@ -72,18 +72,40 @@ public class JDBC1{
 
 			//inserting image to database
 
-			String q ="insert into images(pic) values(?)";
-			PreparedStatement s =con.prepareStatement(q);
+			// String q ="insert into images(pic) values(?)";
+			// PreparedStatement s =con.prepareStatement(q);
 
-			FileInputStream file=new FileInputStream("download.jfif");
+			// FileInputStream file=new FileInputStream("download.jfif");
 
-			s.setBinaryStream(1, file,file.available());
-			s.executeUpdate();
-			System.out.println("inserted image");
-
-
+			// s.setBinaryStream(1, file,file.available());
+			// s.executeUpdate();
+			// System.out.println("inserted image");
 
 
+
+
+
+			//update data
+			// String q ="update table1 set tName=? , tCity=? where tId = ?";
+			// BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
+			// System.out.print("Enter new name: ");
+			// String newName=br.readLine();
+			// System.out.print("Enter your city: ");
+			// String city=br.readLine();
+			// System.out.print("Enter the id : ");
+			// int id =Integer.parseInt(br.readLine());
+
+			// PreparedStatement s= con.prepareStatement(q);
+			// s.setString(1,newName);
+			// s.setString(2,city);
+			// s.setInt(3,id);
+			// s.executeUpdate();
+
+
+			// System.out.println("Updated succesfull");
+
+
+			
 
 			con.close();
 			
